@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="basic order&amp;payment 完成 episode 14">
-      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/java/com/atguigu/springcloud/EurekaMain7001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="配置 单机版eureka,并访问">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46162403" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -162,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649293714626</updated>
       <workItem from="1649293717341" duration="7656000" />
-      <workItem from="1649312924291" duration="2469000" />
+      <workItem from="1649312924291" duration="3126000" />
     </task>
     <task id="LOCAL-00001" summary="添加新module:支付模块，并进行初步配置">
       <created>1649296280382</created>
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649313920947</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="配置 单机版eureka,并访问">
+      <created>1649315432964</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649315432964</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +212,8 @@
     <MESSAGE value="添加新module:支付模块，并进行初步配置" />
     <MESSAGE value="resolve bug" />
     <MESSAGE value="basic order&amp;payment 完成 episode 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic order&amp;payment 完成 episode 14" />
+    <MESSAGE value="配置 单机版eureka,并访问" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置 单机版eureka,并访问" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="97" key="#Project_Structure" timestamp="1649315252303">
@@ -223,46 +228,46 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
-    <state width="1545" height="260" key="GridCell.Tab.0.bottom" timestamp="1649315379894">
+    <state width="1545" height="260" key="GridCell.Tab.0.bottom" timestamp="1649315438468">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315379894" />
-    <state width="1545" height="260" key="GridCell.Tab.0.center" timestamp="1649315379893">
+    <state width="1545" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
+    <state width="1545" height="260" key="GridCell.Tab.0.center" timestamp="1649315438468">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315379893" />
-    <state width="1545" height="260" key="GridCell.Tab.0.left" timestamp="1649315379893">
+    <state width="1545" height="260" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
+    <state width="1545" height="260" key="GridCell.Tab.0.left" timestamp="1649315438467">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315379893" />
-    <state width="1545" height="260" key="GridCell.Tab.0.right" timestamp="1649315379894">
+    <state width="1545" height="260" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438467" />
+    <state width="1545" height="260" key="GridCell.Tab.0.right" timestamp="1649315438468">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315379894" />
-    <state width="1545" height="260" key="GridCell.Tab.1.bottom" timestamp="1649315379895">
+    <state width="1545" height="260" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
+    <state width="1545" height="260" key="GridCell.Tab.1.bottom" timestamp="1649315438468">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315379895" />
-    <state width="1545" height="260" key="GridCell.Tab.1.center" timestamp="1649315379895">
+    <state width="1545" height="260" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
+    <state width="1545" height="260" key="GridCell.Tab.1.center" timestamp="1649315438468">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315379895" />
-    <state width="1545" height="260" key="GridCell.Tab.1.left" timestamp="1649315379894">
+    <state width="1545" height="260" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
+    <state width="1545" height="260" key="GridCell.Tab.1.left" timestamp="1649315438468">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315379894" />
-    <state width="1545" height="260" key="GridCell.Tab.1.right" timestamp="1649315379895">
+    <state width="1545" height="260" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
+    <state width="1545" height="260" key="GridCell.Tab.1.right" timestamp="1649315438468">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315379895" />
+    <state width="1545" height="260" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
     <state x="531" y="179" width="858" height="529" key="Registry" timestamp="1649312850073">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="531" y="179" width="858" height="529" key="Registry/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649312850073" />
-    <state x="440" y="97" key="SettingsEditor" timestamp="1649313007502">
+    <state x="440" y="97" key="SettingsEditor" timestamp="1649315676789">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="440" y="97" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313007502" />
+    <state x="440" y="97" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315676789" />
     <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1649313969398">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
