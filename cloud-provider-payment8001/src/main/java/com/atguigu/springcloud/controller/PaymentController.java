@@ -24,7 +24,8 @@ public class PaymentController
     @Resource
     private PaymentService paymentService;
 
-
+    @Value("${server.port}")
+    private String serverPort;
 
     @PostMapping(value = "/payment/create")
     public CommonResult create(@RequestBody Payment payment)
@@ -34,7 +35,7 @@ public class PaymentController
 
         if(result > 0)
         {
-            return new CommonResult(200,"插入数据库成功, ",result);
+            return new CommonResult(200,"插入数据库成功,serverPort: "+serverPort,result);
         }else{
             return new CommonResult(444,"插入数据库失败",null);
         }
@@ -47,7 +48,7 @@ public class PaymentController
 
         if(payment != null)
         {
-            return new CommonResult(200,"查询成功a:  ",payment);
+            return new CommonResult(200,"查询成功,serverPort:  "+serverPort,payment);
         }else{
             return new CommonResult(444,"没有对应记录,查询ID: "+id,null);
         }
