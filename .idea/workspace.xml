@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="22-1:新建module: cloud-provider-payment8002">
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" afterDir="false" />
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="22-2: cloud-consumer-order80通过eureka访问服务CLOUD-PAYMENT-SERVICE">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,9 +171,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OrderMain80" />
         <item itemvalue="Spring Boot.PaymentMain8002" />
         <item itemvalue="Spring Boot.PaymentMain8001" />
+        <item itemvalue="Spring Boot.OrderMain80" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +189,7 @@
       <updated>1649293714626</updated>
       <workItem from="1649293717341" duration="7656000" />
       <workItem from="1649312924291" duration="7096000" />
-      <workItem from="1649321212450" duration="553000" />
+      <workItem from="1649321212450" duration="1122000" />
     </task>
     <task id="LOCAL-00001" summary="添加新module:支付模块，并进行初步配置">
       <created>1649296280382</created>
@@ -255,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649321402990</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="22-2: cloud-consumer-order80通过eureka访问服务CLOUD-PAYMENT-SERVICE">
+      <created>1649321889414</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649321889414</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +290,8 @@
     <MESSAGE value="20.搭建eureka集群环境：cloud-eureka-server7001+cloud-eureka-server7002" />
     <MESSAGE value="21.将cloud-consumer-order80和cloud-provider-payment8001注册到集群环境" />
     <MESSAGE value="22-1:新建module: cloud-provider-payment8002" />
-    <option name="LAST_COMMIT_MESSAGE" value="22-1:新建module: cloud-provider-payment8002" />
+    <MESSAGE value="22-2: cloud-consumer-order80通过eureka访问服务CLOUD-PAYMENT-SERVICE" />
+    <option name="LAST_COMMIT_MESSAGE" value="22-2: cloud-consumer-order80通过eureka访问服务CLOUD-PAYMENT-SERVICE" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="97" key="#Project_Structure" timestamp="1649319323236">
@@ -303,38 +310,38 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
-    <state width="1545" height="383" key="GridCell.Tab.0.bottom" timestamp="1649321764382">
+    <state width="1545" height="383" key="GridCell.Tab.0.bottom" timestamp="1649322303729">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649321764382" />
-    <state width="1545" height="383" key="GridCell.Tab.0.center" timestamp="1649321764381">
+    <state width="1545" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649322303729" />
+    <state width="1545" height="383" key="GridCell.Tab.0.center" timestamp="1649322303728">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="383" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649321764381" />
-    <state width="1545" height="383" key="GridCell.Tab.0.left" timestamp="1649321764381">
+    <state width="1545" height="383" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649322303728" />
+    <state width="1545" height="383" key="GridCell.Tab.0.left" timestamp="1649322303728">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="383" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649321764381" />
-    <state width="1545" height="383" key="GridCell.Tab.0.right" timestamp="1649321764381">
+    <state width="1545" height="383" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649322303728" />
+    <state width="1545" height="383" key="GridCell.Tab.0.right" timestamp="1649322303729">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="383" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649321764381" />
-    <state width="1545" height="383" key="GridCell.Tab.1.bottom" timestamp="1649321764382">
+    <state width="1545" height="383" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649322303729" />
+    <state width="1545" height="383" key="GridCell.Tab.1.bottom" timestamp="1649322303729">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649321764382" />
-    <state width="1545" height="383" key="GridCell.Tab.1.center" timestamp="1649321764382">
+    <state width="1545" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649322303729" />
+    <state width="1545" height="383" key="GridCell.Tab.1.center" timestamp="1649322303729">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="383" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649321764382" />
-    <state width="1545" height="383" key="GridCell.Tab.1.left" timestamp="1649321764382">
+    <state width="1545" height="383" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649322303729" />
+    <state width="1545" height="383" key="GridCell.Tab.1.left" timestamp="1649322303729">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="383" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649321764382" />
-    <state width="1545" height="383" key="GridCell.Tab.1.right" timestamp="1649321764382">
+    <state width="1545" height="383" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649322303729" />
+    <state width="1545" height="383" key="GridCell.Tab.1.right" timestamp="1649322303729">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="383" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649321764382" />
+    <state width="1545" height="383" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649322303729" />
     <state x="531" y="179" width="858" height="529" key="Registry" timestamp="1649312850073">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
