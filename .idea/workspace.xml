@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="" />
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -15,20 +24,35 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="27RrPO1ewSkfCkDtPvNsubk9Zv1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46162403" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\cjProject\springcloud\springcloudstudy\cloud-provider-payment8001\src\main\resources" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,33 +64,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649293714626</updated>
-      <workItem from="1649293717341" duration="1118000" />
+      <workItem from="1649293717341" duration="2268000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="412" key="GridCell.Tab.0.bottom" timestamp="1649294730165">
+    <state x="809" y="420" key="Github.ShareDialog" timestamp="1649294895489">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294730165" />
-    <state width="1877" height="412" key="GridCell.Tab.0.center" timestamp="1649294730165">
+    <state x="809" y="420" key="Github.ShareDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294895489" />
+    <state x="700" y="226" key="Github.UntrackedFilesDialog" timestamp="1649294940287">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294730165" />
-    <state width="1877" height="412" key="GridCell.Tab.0.left" timestamp="1649294730165">
+    <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
+    <state width="1877" height="412" key="GridCell.Tab.0.bottom" timestamp="1649295496242">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294730165" />
-    <state width="1877" height="412" key="GridCell.Tab.0.right" timestamp="1649294730165">
+    <state width="1877" height="412" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295496242" />
+    <state width="1877" height="412" key="GridCell.Tab.0.center" timestamp="1649295496242">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294730165" />
+    <state width="1877" height="412" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295496242" />
+    <state width="1877" height="412" key="GridCell.Tab.0.left" timestamp="1649295496242">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state width="1877" height="412" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295496242" />
+    <state width="1877" height="412" key="GridCell.Tab.0.right" timestamp="1649295496242">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state width="1877" height="412" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295496242" />
     <state x="440" y="97" key="SettingsEditor" timestamp="1649294280772">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="440" y="97" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294280772" />
+    <state x="334" y="183" key="new project wizard" timestamp="1649295201175">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="334" y="183" key="new project wizard/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295201175" />
   </component>
 </project>
