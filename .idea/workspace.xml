@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="配置 单机版eureka,并访问">
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="将cloud-provider-payment8001注册到cloud-eureka-server7001">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PaymentMain8001" />
         <item itemvalue="Spring Boot.OrderMain80" />
+        <item itemvalue="Spring Boot.PaymentMain8001" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649293714626</updated>
       <workItem from="1649293717341" duration="7656000" />
-      <workItem from="1649312924291" duration="3126000" />
+      <workItem from="1649312924291" duration="3613000" />
     </task>
     <task id="LOCAL-00001" summary="添加新module:支付模块，并进行初步配置">
       <created>1649296280382</created>
@@ -189,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649315432964</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="将cloud-provider-payment8001注册到cloud-eureka-server7001">
+      <created>1649316224794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649316224794</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +220,8 @@
     <MESSAGE value="resolve bug" />
     <MESSAGE value="basic order&amp;payment 完成 episode 14" />
     <MESSAGE value="配置 单机版eureka,并访问" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置 单机版eureka,并访问" />
+    <MESSAGE value="将cloud-provider-payment8001注册到cloud-eureka-server7001" />
+    <option name="LAST_COMMIT_MESSAGE" value="将cloud-provider-payment8001注册到cloud-eureka-server7001" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="97" key="#Project_Structure" timestamp="1649315252303">
@@ -228,38 +236,38 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
-    <state width="1545" height="260" key="GridCell.Tab.0.bottom" timestamp="1649315438468">
+    <state width="1545" height="382" key="GridCell.Tab.0.bottom" timestamp="1649316230444">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
-    <state width="1545" height="260" key="GridCell.Tab.0.center" timestamp="1649315438468">
+    <state width="1545" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316230444" />
+    <state width="1545" height="382" key="GridCell.Tab.0.center" timestamp="1649316230444">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
-    <state width="1545" height="260" key="GridCell.Tab.0.left" timestamp="1649315438467">
+    <state width="1545" height="382" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316230444" />
+    <state width="1545" height="382" key="GridCell.Tab.0.left" timestamp="1649316230444">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438467" />
-    <state width="1545" height="260" key="GridCell.Tab.0.right" timestamp="1649315438468">
+    <state width="1545" height="382" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316230444" />
+    <state width="1545" height="382" key="GridCell.Tab.0.right" timestamp="1649316230444">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
-    <state width="1545" height="260" key="GridCell.Tab.1.bottom" timestamp="1649315438468">
+    <state width="1545" height="382" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316230444" />
+    <state width="1545" height="382" key="GridCell.Tab.1.bottom" timestamp="1649316230444">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
-    <state width="1545" height="260" key="GridCell.Tab.1.center" timestamp="1649315438468">
+    <state width="1545" height="382" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316230444" />
+    <state width="1545" height="382" key="GridCell.Tab.1.center" timestamp="1649316230444">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
-    <state width="1545" height="260" key="GridCell.Tab.1.left" timestamp="1649315438468">
+    <state width="1545" height="382" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316230444" />
+    <state width="1545" height="382" key="GridCell.Tab.1.left" timestamp="1649316230444">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
-    <state width="1545" height="260" key="GridCell.Tab.1.right" timestamp="1649315438468">
+    <state width="1545" height="382" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316230444" />
+    <state width="1545" height="382" key="GridCell.Tab.1.right" timestamp="1649316230444">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1545" height="260" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315438468" />
+    <state width="1545" height="382" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316230444" />
     <state x="531" y="179" width="858" height="529" key="Registry" timestamp="1649312850073">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
@@ -277,9 +285,9 @@
     </state>
     <state x="334" y="183" key="new project wizard/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315136284" />
     <state x="2109" y="152" key="new project wizard/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1649302229303" />
-    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1649300620839">
+    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1649316206645">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649300620839" />
+    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649316206645" />
   </component>
 </project>
