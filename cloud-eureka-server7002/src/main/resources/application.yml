@@ -5,15 +5,16 @@ server:
 eureka:
   instance:
     hostname: eureka7002.com #eureka服务端的实例名称
+    lease-expiration-duration-in-seconds: 90 #从接收到上次心跳到可以禁用此节点（并从view中移除）的时间，默认90s
+    lease-renewal-interval-in-seconds: 30 #client 发送心跳信息到 server端的间隔时间，默认30s
   client:
     register-with-eureka: false     #false表示不向注册中心注册自己。
     fetch-registry: false     #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     service-url:
-    #集群指向其它eureka
+      #集群指向其它eureka
       defaultZone: http://eureka7001.com:7001/eureka/
     #单机就是7001自己
-#      defaultZone: http://eureka7001.com:7001/eureka/
-  #server:
-    #关闭自我保护机制，保证不可用服务被及时踢除
-    #enable-self-preservation: false
-    #eviction-interval-timer-in-ms: 2000
+  #      defaultZone: http://eureka7001.com:7001/eureka/
+  server:
+    enable-self-preservation: false #关闭自我保护机制，保证不可用服务被及时踢除
+    eviction-interval-timer-in-ms: 2000 #从集群中踢出的间隔时间 ，默认 60 * 1000 ms
