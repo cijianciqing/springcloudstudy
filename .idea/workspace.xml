@@ -19,18 +19,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="添加新module:支付模块，并进行初步配置">
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="resolve bug">
+      <change afterPath="$PROJECT_DIR$/cloud-api-commons/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/atguigu/springcloud/entities/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/atguigu/springcloud/entities/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/OrderMain80.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/dao/PaymentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/mapper/PaymentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/PaymentMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/PaymentMain8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -59,23 +80,55 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46162403" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.springcloud.config" />
+      <recent name="com.atguigu.springcloud.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\cjProject\springcloud\springcloudstudy\cloud-consumer-order80\src\main\resources" />
       <recent name="E:\java\cjProject\springcloud\springcloudstudy\cloud-provider-payment8001\src\main\resources" />
+      <recent name="E:\java\cjProject\springcloud\springcloudstudy\cloud-consumer-order80\src\main\java" />
+      <recent name="E:\java\cjProject\springcloud\springcloudstudy\cloud-provider-payment8001\src\main\java\com\atguigu\springcloud" />
+      <recent name="E:\java\cjProject\springcloud\springcloudstudy\cloud-api-commons\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OrderMain80">
+    <configuration name="OrderMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-consumer-order80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.OrderMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-provider-payment8001" />
       <extension name="coverage">
@@ -92,6 +145,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PaymentMain8001" />
+        <item itemvalue="Spring Boot.OrderMain80" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +159,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649293714626</updated>
-      <workItem from="1649293717341" duration="3527000" />
+      <workItem from="1649293717341" duration="7656000" />
+      <workItem from="1649312924291" duration="765000" />
     </task>
     <task id="LOCAL-00001" summary="添加新module:支付模块，并进行初步配置">
       <created>1649296280382</created>
@@ -114,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649296280383</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="resolve bug">
+      <created>1649298782098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649298782098</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,11 +192,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="添加新module:支付模块，并进行初步配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加新module:支付模块，并进行初步配置" />
+    <MESSAGE value="resolve bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolve bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="809" y="420" key="Github.ShareDialog" timestamp="1649294895489">
@@ -145,29 +209,54 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
-    <state width="1877" height="412" key="GridCell.Tab.0.bottom" timestamp="1649295496242">
+    <state width="1293" height="435" key="GridCell.Tab.0.bottom" timestamp="1649313356175">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295496242" />
-    <state width="1877" height="412" key="GridCell.Tab.0.center" timestamp="1649295496242">
+    <state width="1293" height="435" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313356175" />
+    <state width="1293" height="435" key="GridCell.Tab.0.center" timestamp="1649313356175">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295496242" />
-    <state width="1877" height="412" key="GridCell.Tab.0.left" timestamp="1649295496242">
+    <state width="1293" height="435" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313356175" />
+    <state width="1293" height="435" key="GridCell.Tab.0.left" timestamp="1649313356175">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295496242" />
-    <state width="1877" height="412" key="GridCell.Tab.0.right" timestamp="1649295496242">
+    <state width="1293" height="435" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313356175" />
+    <state width="1293" height="435" key="GridCell.Tab.0.right" timestamp="1649313356175">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295496242" />
-    <state x="440" y="97" key="SettingsEditor" timestamp="1649294280772">
+    <state width="1293" height="435" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313356175" />
+    <state width="1293" height="435" key="GridCell.Tab.1.bottom" timestamp="1649313356176">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="440" y="97" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294280772" />
-    <state x="334" y="183" key="new project wizard" timestamp="1649295201175">
+    <state width="1293" height="435" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313356176" />
+    <state width="1293" height="435" key="GridCell.Tab.1.center" timestamp="1649313356175">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="334" y="183" key="new project wizard/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649295201175" />
+    <state width="1293" height="435" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313356175" />
+    <state width="1293" height="435" key="GridCell.Tab.1.left" timestamp="1649313356175">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state width="1293" height="435" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313356175" />
+    <state width="1293" height="435" key="GridCell.Tab.1.right" timestamp="1649313356176">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state width="1293" height="435" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313356176" />
+    <state x="531" y="179" width="858" height="529" key="Registry" timestamp="1649312850073">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="531" y="179" width="858" height="529" key="Registry/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649312850073" />
+    <state x="440" y="97" key="SettingsEditor" timestamp="1649313007502">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="440" y="97" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649313007502" />
+    <state x="2109" y="152" key="new project wizard" timestamp="1649302229303">
+      <screen x="1920" y="0" width="1440" height="870" />
+    </state>
+    <state x="334" y="183" key="new project wizard/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649299313579" />
+    <state x="2109" y="152" key="new project wizard/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1649302229303" />
+    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1649300620839">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649300620839" />
   </component>
 </project>
