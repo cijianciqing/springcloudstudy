@@ -45,6 +45,9 @@ public class OrderController
     }
 
 
+    /*
+    * 主要是比较RestTemplate getForObject与 getForEntity
+    * */
     @GetMapping("/consumer/payment/getForEntity/{id}")
     public CommonResult<Payment> getPayment2(@PathVariable("id") Long id)
     {
