@@ -19,30 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="59-60.测试hystrix熔断">
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/OrderHystrixMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/controller/OrderHystirxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/service/PaymentHystrixService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-hystrix-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-order80/src/main/java/com/atguigu/springcloud/OrderFeignMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-order80/src/main/java/com/atguigu/springcloud/config/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-order80/src/main/java/com/atguigu/springcloud/controller/OrderFeignController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-order80/src/main/java/com/atguigu/springcloud/service/PaymentFeignService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-feign-order80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/com/atguigu/springcloud/PaymentHystrixMain8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/java/com/atguigu/springcloud/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-provider-hystrix-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/cloud-provider-payment8002.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/cloud-provider-payment8002.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="45.更改openfeign module:cloud-consumer-openfeign-order80，配置日志增强" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -345,7 +322,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649398214991</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="44. 新建openfeign module: cloud-consumer-openfeign-order80访问CLOUD-PAYMENT-SERVICE服务，使用默认的负载均衡规则【轮询】">
+      <created>1649579044680</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1649579044680</updated>
+    </task>
+    <task id="LOCAL-00017" summary="45.更改openfeign module:cloud-consumer-openfeign-order80，配置日志增强">
+      <created>1649579142261</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1649579142261</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +401,9 @@
     <MESSAGE value="25-26.eureka自我保护" />
     <MESSAGE value="28. 新建 zookeeper module： cloud-provider-payment8004," />
     <MESSAGE value="30. 新建 zookeeper module： cloud-consumerzk-order80" />
-    <option name="LAST_COMMIT_MESSAGE" value="30. 新建 zookeeper module： cloud-consumerzk-order80" />
+    <MESSAGE value="44. 新建openfeign module: cloud-consumer-openfeign-order80访问CLOUD-PAYMENT-SERVICE服务，使用默认的负载均衡规则【轮询】" />
+    <MESSAGE value="45.更改openfeign module:cloud-consumer-openfeign-order80，配置日志增强" />
+    <option name="LAST_COMMIT_MESSAGE" value="45.更改openfeign module:cloud-consumer-openfeign-order80，配置日志增强" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="97" key="#Project_Structure" timestamp="1649319323236">
@@ -469,6 +462,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="531" y="179" width="858" height="529" key="Registry/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649312850073" />
+    <state x="508" y="224" key="RollbackChangesDialog" timestamp="1649578882745">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="508" y="224" key="RollbackChangesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649578882745" />
     <state x="440" y="97" key="SettingsEditor" timestamp="1649315676789">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
@@ -477,10 +474,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649398536403" />
-    <state x="141" y="38" width="1736" height="865" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1649578855637">
+    <state x="143" y="68" width="1736" height="865" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1649579179113">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="141" y="38" width="1736" height="865" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649578855637" />
+    <state x="143" y="68" width="1736" height="865" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649579179113" />
     <state x="669" y="188" key="new project wizard" timestamp="1649398049418">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
