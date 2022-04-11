@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="69.新建Gateway module: cloud-gateway-gateway9527,并进行基本配置">
-      <change afterPath="$PROJECT_DIR$/cloud-gateway-gateway9527/src/main/java/com/atguigu/springcloud/config/GateWayConfig.java" afterDir="false" />
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="70.通过代码的方式配置Gateway">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway-gateway9527/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway-gateway9527/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,9 +222,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.GateWayMain9527" />
+        <item itemvalue="Spring Boot.PaymentMain8002" />
         <item itemvalue="Spring Boot.PaymentMain8001" />
         <item itemvalue="Spring Boot.OrderMain80" />
-        <item itemvalue="Spring Boot.PaymentMain8002" />
         <item itemvalue="Spring Boot.OrderZKMain80" />
       </list>
     </recent_temporary>
@@ -369,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649640755041</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="70.通过代码的方式配置Gateway">
+      <created>1649640985905</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1649640985905</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +444,8 @@
     <MESSAGE value="44. 新建openfeign module: cloud-consumer-openfeign-order80访问CLOUD-PAYMENT-SERVICE服务，使用默认的负载均衡规则【轮询】" />
     <MESSAGE value="45.更改openfeign module:cloud-consumer-openfeign-order80，配置日志增强" />
     <MESSAGE value="69.新建Gateway module: cloud-gateway-gateway9527,并进行基本配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="69.新建Gateway module: cloud-gateway-gateway9527,并进行基本配置" />
+    <MESSAGE value="70.通过代码的方式配置Gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="70.通过代码的方式配置Gateway" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="97" key="#Project_Structure" timestamp="1649319323236">
@@ -464,38 +472,38 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
-    <state width="1497" height="347" key="GridCell.Tab.0.bottom" timestamp="1649640843365">
+    <state width="930" height="347" key="GridCell.Tab.0.bottom" timestamp="1649642818816">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1497" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640843365" />
-    <state width="1497" height="347" key="GridCell.Tab.0.center" timestamp="1649640843365">
+    <state width="930" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649642818816" />
+    <state width="930" height="347" key="GridCell.Tab.0.center" timestamp="1649642818816">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1497" height="347" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640843365" />
-    <state width="1497" height="347" key="GridCell.Tab.0.left" timestamp="1649640843365">
+    <state width="930" height="347" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649642818816" />
+    <state width="930" height="347" key="GridCell.Tab.0.left" timestamp="1649642818816">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1497" height="347" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640843365" />
-    <state width="1497" height="347" key="GridCell.Tab.0.right" timestamp="1649640843365">
+    <state width="930" height="347" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649642818816" />
+    <state width="930" height="347" key="GridCell.Tab.0.right" timestamp="1649642818816">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1497" height="347" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640843365" />
-    <state width="1497" height="347" key="GridCell.Tab.1.bottom" timestamp="1649640843365">
+    <state width="930" height="347" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649642818816" />
+    <state width="930" height="347" key="GridCell.Tab.1.bottom" timestamp="1649642818816">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1497" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640843365" />
-    <state width="1497" height="347" key="GridCell.Tab.1.center" timestamp="1649640843365">
+    <state width="930" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649642818816" />
+    <state width="930" height="347" key="GridCell.Tab.1.center" timestamp="1649642818816">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1497" height="347" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640843365" />
-    <state width="1497" height="347" key="GridCell.Tab.1.left" timestamp="1649640843365">
+    <state width="930" height="347" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649642818816" />
+    <state width="930" height="347" key="GridCell.Tab.1.left" timestamp="1649642818816">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1497" height="347" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640843365" />
-    <state width="1497" height="347" key="GridCell.Tab.1.right" timestamp="1649640843365">
+    <state width="930" height="347" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649642818816" />
+    <state width="930" height="347" key="GridCell.Tab.1.right" timestamp="1649642818816">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1497" height="347" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640843365" />
+    <state width="930" height="347" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649642818816" />
     <state x="531" y="179" width="858" height="529" key="Registry" timestamp="1649312850073">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
@@ -508,10 +516,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="440" y="97" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649315676789" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1649398536403">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1649640996568">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649398536403" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649640996568" />
     <state x="143" y="68" width="1736" height="865" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1649579179113">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
