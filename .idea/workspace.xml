@@ -19,17 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="90.解决重复消费的问题，原理未知">
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9001/src/main/java/com/atguigu/springcloud/alibaba/PaymentMain9001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9001/src/main/java/com/atguigu/springcloud/alibaba/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9002/src/main/java/com/atguigu/springcloud/alibaba/PaymentMain9002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9002/src/main/java/com/atguigu/springcloud/alibaba/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9002/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="99.创建 alibaba nacos module *2: springcloudalibaba-provider-payment9001/9002">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <list id="1aec144c-0ac8-4287-8c22-8a7e41a45430" name="87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message" comment="" />
     <list id="9633d4b7-366a-4d2c-a920-db619b9e3642" name="Revert &quot;87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message&quot;" comment="Revert &quot;87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message&quot;&#10;&#10;This reverts commit a4f96401" />
@@ -130,7 +121,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PaymentMain9002">
+  <component name="RunManager" selected="Spring Boot.OrderNacosMain83">
     <configuration name="ConfigCenterMain3344" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-config-center-3344" />
       <extension name="coverage">
@@ -171,19 +162,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GateWayMain9527" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-gateway-gateway9527" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.GateWayMain9527" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OrderFeignMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-feign-order80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.OrderFeignMain80" />
@@ -201,6 +179,19 @@
     <configuration name="OrderMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-order80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.OrderMain80" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderNacosMain83" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloudalibaba-consumer-order83" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.springcloud.alibaba.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.alibaba.OrderNacosMain83" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -282,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OrderNacosMain83" />
         <item itemvalue="Spring Boot.StreamMQMain8803" />
         <item itemvalue="Spring Boot.StreamMQMain8801" />
         <item itemvalue="Spring Boot.ConfigClientMain3355" />
         <item itemvalue="Spring Boot.ConfigCenterMain3344" />
-        <item itemvalue="Spring Boot.GateWayMain9527" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +295,7 @@
       <workItem from="1649312924291" duration="7096000" />
       <workItem from="1649321212450" duration="11456000" />
       <workItem from="1649806233434" duration="3811000" />
-      <workItem from="1650015063720" duration="736000" />
+      <workItem from="1650015063720" duration="2152000" />
     </task>
     <task id="LOCAL-00001" summary="添加新module:支付模块，并进行初步配置">
       <created>1649296280382</created>
@@ -474,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649759825311</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="99.创建 alibaba nacos module *2: springcloudalibaba-provider-payment9001/9002">
+      <created>1650016007928</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1650016007928</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +546,8 @@
     <MESSAGE value="73.新建Config server module:cloud-config-center-3344,使用git管理配置文件" />
     <MESSAGE value="CJ: 完善 Config modules" />
     <MESSAGE value="90.解决重复消费的问题，原理未知" />
-    <option name="LAST_COMMIT_MESSAGE" value="90.解决重复消费的问题，原理未知" />
+    <MESSAGE value="99.创建 alibaba nacos module *2: springcloudalibaba-provider-payment9001/9002" />
+    <option name="LAST_COMMIT_MESSAGE" value="99.创建 alibaba nacos module *2: springcloudalibaba-provider-payment9001/9002" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="97" key="#Project_Structure" timestamp="1650015549276">
@@ -579,38 +578,38 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
-    <state width="1111" height="353" key="GridCell.Tab.0.bottom" timestamp="1650015773976">
+    <state width="1111" height="353" key="GridCell.Tab.0.bottom" timestamp="1650016006963">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1111" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650015773976" />
-    <state width="1111" height="353" key="GridCell.Tab.0.center" timestamp="1650015773975">
+    <state width="1111" height="353" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016006963" />
+    <state width="1111" height="353" key="GridCell.Tab.0.center" timestamp="1650016006963">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1111" height="353" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650015773975" />
-    <state width="1111" height="353" key="GridCell.Tab.0.left" timestamp="1650015773975">
+    <state width="1111" height="353" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016006963" />
+    <state width="1111" height="353" key="GridCell.Tab.0.left" timestamp="1650016006963">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1111" height="353" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650015773975" />
-    <state width="1111" height="353" key="GridCell.Tab.0.right" timestamp="1650015773975">
+    <state width="1111" height="353" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016006963" />
+    <state width="1111" height="353" key="GridCell.Tab.0.right" timestamp="1650016006963">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1111" height="353" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650015773975" />
-    <state width="1111" height="353" key="GridCell.Tab.1.bottom" timestamp="1650015773976">
+    <state width="1111" height="353" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016006963" />
+    <state width="1111" height="353" key="GridCell.Tab.1.bottom" timestamp="1650016006964">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1111" height="353" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650015773976" />
-    <state width="1111" height="353" key="GridCell.Tab.1.center" timestamp="1650015773976">
+    <state width="1111" height="353" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016006964" />
+    <state width="1111" height="353" key="GridCell.Tab.1.center" timestamp="1650016006964">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1111" height="353" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650015773976" />
-    <state width="1111" height="353" key="GridCell.Tab.1.left" timestamp="1650015773976">
+    <state width="1111" height="353" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016006964" />
+    <state width="1111" height="353" key="GridCell.Tab.1.left" timestamp="1650016006963">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1111" height="353" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650015773976" />
-    <state width="1111" height="353" key="GridCell.Tab.1.right" timestamp="1650015773976">
+    <state width="1111" height="353" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016006963" />
+    <state width="1111" height="353" key="GridCell.Tab.1.right" timestamp="1650016006964">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1111" height="353" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650015773976" />
+    <state width="1111" height="353" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016006964" />
     <state width="1146" height="347" key="GridCell.Tab.2.bottom" timestamp="1649656856223">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
@@ -643,10 +642,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="806" y="436" key="VCS.ChangelistChooser/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649757688936" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1649759829486">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1650016015588">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649759829486" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650016015588" />
     <state x="143" y="68" width="1736" height="865" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1649757963406">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>

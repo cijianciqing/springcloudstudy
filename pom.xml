@@ -26,6 +26,7 @@
     <module>cloud-stream-rabbitmq-consumer8803</module>
     <module>springcloudalibaba-provider-payment9001</module>
     <module>springcloudalibaba-provider-payment9002</module>
+    <module>springcloudalibaba-consumer-order83</module>
   </modules>
   <packaging>pom</packaging>
   <name>Maven</name>
