@@ -28,6 +28,7 @@
     <module>springcloudalibaba-provider-payment9002</module>
     <module>springcloudalibaba-consumer-order83</module>
     <module>springcloudalibaba-nacos-config-client3377</module>
+      <module>springcloudalibaba-sentinel-service8401</module>
   </modules>
   <packaging>pom</packaging>
   <name>Maven</name>
