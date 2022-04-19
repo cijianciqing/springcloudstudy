@@ -1,5 +1,8 @@
 package com.atguigu.springcloud.alibaba.controller;
 
+import com.atguigu.springcloud.alibaba.service.PaymentService;
+import com.atguigu.springcloud.entities.CommonResult;
+import com.atguigu.springcloud.entities.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,6 +30,18 @@ public class OrderNacosController
     public String paymentInfo(@PathVariable("id") Long id)
     {
         return restTemplate.getForObject(serverURL+"/payment/nacos/"+id,String.class);
+    }
+
+
+
+    //==================OpenFeign
+    @Resource
+    private PaymentService paymentService;
+
+    @GetMapping(value = "/consumer/paymentSQL/{id}")
+    public CommonResult<Payment> paymentSQL(@PathVariable("id") Long id)
+    {
+        return paymentService.paymentSQL(id);
     }
 
 }
