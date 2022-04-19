@@ -19,18 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="sentinel 各种测试，直到 125 hot key">
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/java/com/atguigu/springcloud/alibaba/service/PaymentFallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/java/com/atguigu/springcloud/alibaba/service/PaymentService.java" afterDir="false" />
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="130-136. openfeign配合sentinel实现服务熔断功能">
+      <change afterPath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/src/main/java/com/atguigu/springcloud/alibaba/controller/RateLimitController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/java/com/atguigu/springcloud/alibaba/OrderNacosMain83.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/java/com/atguigu/springcloud/alibaba/OrderNacosMain83.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/java/com/atguigu/springcloud/alibaba/controller/OrderNacosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/java/com/atguigu/springcloud/alibaba/controller/OrderNacosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-provider-payment9001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-provider-payment9001/src/main/java/com/atguigu/springcloud/alibaba/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9001/src/main/java/com/atguigu/springcloud/alibaba/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-provider-payment9002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-provider-payment9002/src/main/java/com/atguigu/springcloud/alibaba/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-provider-payment9002/src/main/java/com/atguigu/springcloud/alibaba/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/src/main/resources/application.yml" afterDir="false" />
     </list>
     <list id="1aec144c-0ac8-4287-8c22-8a7e41a45430" name="87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message" comment="" />
     <list id="9633d4b7-366a-4d2c-a920-db619b9e3642" name="Revert &quot;87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message&quot;" comment="Revert &quot;87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message&quot;&#10;&#10;This reverts commit a4f96401" />
@@ -109,11 +102,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.springcloud.alibaba.controller" />
       <recent name="com.atguigu.springcloud" />
       <recent name="com.atguigu.springcloud.filter" />
       <recent name="com.atguigu.springcloud.config" />
       <recent name="com.atguigu.myrule" />
-      <recent name="com.atguigu.springcloud.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\java\cjProject\springcloud\springcloudstudy\springcloudalibaba-consumer-order83\src\main\java\com\atguigu\springcloud\alibaba" />
@@ -327,7 +320,7 @@
       <workItem from="1649321212450" duration="11456000" />
       <workItem from="1649806233434" duration="3811000" />
       <workItem from="1650015063720" duration="13306000" />
-      <workItem from="1650334900372" duration="2284000" />
+      <workItem from="1650334900372" duration="4111000" />
     </task>
     <task id="LOCAL-00001" summary="添加新module:支付模块，并进行初步配置">
       <created>1649296280382</created>
@@ -532,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650189625323</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="130-136. openfeign配合sentinel实现服务熔断功能">
+      <created>1650352488442</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1650352488442</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="将cloud-provider-payment8001注册到cloud-eureka-server7001" />
     <MESSAGE value="18 将cloud-consumer-order80注册到cloud-eureka-server7001" />
     <MESSAGE value="20.搭建eureka集群环境：cloud-eureka-server7001+cloud-eureka-server7002" />
     <MESSAGE value="21.将cloud-consumer-order80和cloud-provider-payment8001注册到集群环境" />
@@ -613,7 +612,8 @@
     <MESSAGE value="101.创建 alibaba nacos module : springcloudalibaba-nacos-config-client3377，并测试" />
     <MESSAGE value="113.创建 alibaba sentinel module : springcloudalibaba-sentinel-service8401，注册并监控流量" />
     <MESSAGE value="sentinel 各种测试，直到 125 hot key" />
-    <option name="LAST_COMMIT_MESSAGE" value="sentinel 各种测试，直到 125 hot key" />
+    <MESSAGE value="130-136. openfeign配合sentinel实现服务熔断功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="130-136. openfeign配合sentinel实现服务熔断功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="97" key="#Project_Structure" timestamp="1650018743105">
@@ -644,45 +644,45 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
-    <state width="1370" height="335" key="GridCell.Tab.0.bottom" timestamp="1650351989230">
+    <state width="1370" height="335" key="GridCell.Tab.0.bottom" timestamp="1650354063345">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650351989230" />
+    <state width="1370" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
     <state width="1014" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.0.center" timestamp="1650351989230">
+    <state width="1370" height="335" key="GridCell.Tab.0.center" timestamp="1650354063345">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650351989230" />
+    <state width="1370" height="335" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
     <state width="1014" height="316" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.0.left" timestamp="1650351989230">
+    <state width="1370" height="335" key="GridCell.Tab.0.left" timestamp="1650354063344">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650351989230" />
+    <state width="1370" height="335" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063344" />
     <state width="1014" height="316" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.0.right" timestamp="1650351989230">
+    <state width="1370" height="335" key="GridCell.Tab.0.right" timestamp="1650354063345">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650351989230" />
+    <state width="1370" height="335" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
     <state width="1014" height="316" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.1.bottom" timestamp="1650351989230">
+    <state width="1370" height="335" key="GridCell.Tab.1.bottom" timestamp="1650354063345">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650351989230" />
+    <state width="1370" height="335" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
     <state width="1014" height="316" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.1.center" timestamp="1650351989230">
+    <state width="1370" height="335" key="GridCell.Tab.1.center" timestamp="1650354063345">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650351989230" />
+    <state width="1370" height="335" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
     <state width="1014" height="316" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.1.left" timestamp="1650351989230">
+    <state width="1370" height="335" key="GridCell.Tab.1.left" timestamp="1650354063345">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650351989230" />
+    <state width="1370" height="335" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
     <state width="1014" height="316" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.1.right" timestamp="1650351989230">
+    <state width="1370" height="335" key="GridCell.Tab.1.right" timestamp="1650354063345">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650351989230" />
+    <state width="1370" height="335" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
     <state width="1014" height="316" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
     <state width="1146" height="347" key="GridCell.Tab.2.bottom" timestamp="1649656856223">
       <screen x="0" y="0" width="1920" height="1046" />
@@ -716,10 +716,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="806" y="436" key="VCS.ChangelistChooser/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649757688936" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1650334944197">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1650352548992">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650334944197" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650352548992" />
     <state x="143" y="68" width="1736" height="865" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1649757963406">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
@@ -729,10 +729,10 @@
     </state>
     <state x="669" y="188" key="new project wizard/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650163096669" />
     <state x="2109" y="152" key="new project wizard/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1649302229303" />
-    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1649657756731">
+    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1650353623371">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649657756731" />
+    <state x="623" y="226" width="672" height="678" key="search.everywhere.popup/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650353623371" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
