@@ -1,6 +1,7 @@
 package com.atguigu.springcloud.alibaba.service;
 
 import com.atguigu.springcloud.alibaba.domain.CommonResult;
+import com.atguigu.springcloud.alibaba.service.fallback.StorageFallbackService;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @auther zzyy
  * @create 2020-02-26 15:22
  */
-@FeignClient(value = "seata-storage-service")
+@FeignClient(value = "seata-storage-service",fallback = StorageFallbackService.class)
 public interface StorageService
 {
     @PostMapping(value = "/storage/decrease")

@@ -12,15 +12,19 @@ spring:
     nacos:
       discovery:
         server-addr: 172.16.207.221:8848
+    sentinel:
+      transport:
+        #配置Sentinel dashboard地址
+        dashboard: 172.16.207.221:8080
+        #默认8719端口，假如被占用会自动从8719开始依次+1扫描,直至找到未被占用的端口
+        port: 8719
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://172.20.1.117:3306/seata_order
     username: wqn
     password: wqn641214
 
-feign:
-  hystrix:
-    enabled: false
+# 激活Sentinel对Feign的支持
 
 logging:
   level:
@@ -29,3 +33,7 @@ logging:
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
+
+feign:
+  sentinel:
+    enabled: true

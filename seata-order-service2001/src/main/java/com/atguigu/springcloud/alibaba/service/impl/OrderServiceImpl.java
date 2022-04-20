@@ -1,6 +1,7 @@
 package com.atguigu.springcloud.alibaba.service.impl;
 
 import com.atguigu.springcloud.alibaba.dao.OrderDao;
+import com.atguigu.springcloud.alibaba.domain.CommonResult;
 import com.atguigu.springcloud.alibaba.domain.Order;
 import com.atguigu.springcloud.alibaba.service.AccountService;
 import com.atguigu.springcloud.alibaba.service.OrderService;
@@ -40,12 +41,19 @@ public class OrderServiceImpl implements OrderService
 
         //2 扣减库存
         log.info("----->订单微服务开始调用库存，做扣减Count");
-        storageService.decrease(order.getProductId(),order.getCount());
-        log.info("----->订单微服务开始调用库存，做扣减end");
+        CommonResult decrease1 = storageService.decrease(order.getProductId(), order.getCount());
+//        if(decrease1.getCode()==44444){
+//            log.info("----->订单微服务开始调用库存，做扣减 error");
+//            throw new RuntimeException("CJ 无法访问Strorage Service");
+//        }else{
+//            log.info("----->订单微服务开始调用库存，做扣减end");
+//        }
+
 
         //3 扣减账户
         log.info("----->订单微服务开始调用账户，做扣减Money");
-        accountService.decrease(order.getUserId(),order.getMoney());
+        CommonResult decrease = accountService.decrease(order.getUserId(), order.getMoney());
+
         log.info("----->订单微服务开始调用账户，做扣减end");
 
         //4 修改订单状态，从零到1,1代表已经完成
