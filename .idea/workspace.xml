@@ -19,15 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="130-136. openfeign配合sentinel实现服务熔断功能">
-      <change afterPath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/src/main/java/com/atguigu/springcloud/alibaba/controller/RateLimitController.java" afterDir="false" />
+    <list default="true" id="c58ca9c9-58c5-447c-b2b5-647a9dcef7dc" name="Default Changelist" comment="seata结合sentinel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloudalibaba-sentinel-service8401/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/cloud-provider-payment8002.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/cloud-stream-rabbitmq-provider8801.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/atguigu/springcloud/alibaba/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/seata-order-service2001/src/main/java/com/atguigu/springcloud/alibaba/config/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloudalibaba-nacos-config-client3377/springcloudalibaba-nacos-config-client3377.iml" beforeDir="false" />
     </list>
-    <list id="1aec144c-0ac8-4287-8c22-8a7e41a45430" name="87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message" comment="" />
-    <list id="9633d4b7-366a-4d2c-a920-db619b9e3642" name="Revert &quot;87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message&quot;" comment="Revert &quot;87.创建stream module:cloud-stream-rabbitmq-consumer8802,并接收message&quot;&#10;&#10;This reverts commit a4f96401" />
-    <list id="67ea3d0c-486c-4ab7-b3f0-0362c0562e49" name="test1" comment="" />
+    <list id="5ee10375-75bb-4bb0-b5cb-1d7972e90368" name="OlderChangelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,11 +94,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springcloudalibaba-consumer-order83/src/main/java/com/atguigu/springcloud/alibaba" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/seata-order-service2001" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46162403" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -269,6 +269,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeataAccountMainApp2003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seata-account-service2003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.alibaba.SeataAccountMainApp2003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataOrderMainApp2001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seata-order-service2001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.alibaba.SeataOrderMainApp2001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataStorageServiceApplication2002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seata-storage-service2002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.alibaba.SeataStorageServiceApplication2002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamMQMain8801" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-stream-rabbitmq-provider8801" />
       <extension name="coverage">
@@ -321,6 +342,8 @@
       <workItem from="1649806233434" duration="3811000" />
       <workItem from="1650015063720" duration="13306000" />
       <workItem from="1650334900372" duration="4111000" />
+      <workItem from="1650455821602" duration="300000" />
+      <workItem from="1650456135125" duration="426000" />
     </task>
     <task id="LOCAL-00001" summary="添加新module:支付模块，并进行初步配置">
       <created>1649296280382</created>
@@ -632,6 +655,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="92" y="92" width="1736" height="862" key="DiffContextDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649759430735" />
+    <state x="740" y="212" key="FileChooserDialogImpl" timestamp="1650456005664">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="740" y="212" key="FileChooserDialogImpl/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456005664" />
     <state x="698" y="421" key="GitRewordDialog" timestamp="1649316716354">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
@@ -644,45 +671,45 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="700" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649294940287" />
-    <state width="1370" height="335" key="GridCell.Tab.0.bottom" timestamp="1650354063345">
+    <state width="1225" height="460" key="GridCell.Tab.0.bottom" timestamp="1650456222738">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
+    <state width="1225" height="460" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456222738" />
     <state width="1014" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.0.center" timestamp="1650354063345">
+    <state width="1225" height="460" key="GridCell.Tab.0.center" timestamp="1650456222738">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
+    <state width="1225" height="460" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456222738" />
     <state width="1014" height="316" key="GridCell.Tab.0.center/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.0.left" timestamp="1650354063344">
+    <state width="1225" height="460" key="GridCell.Tab.0.left" timestamp="1650456222738">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063344" />
+    <state width="1225" height="460" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456222738" />
     <state width="1014" height="316" key="GridCell.Tab.0.left/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.0.right" timestamp="1650354063345">
+    <state width="1225" height="460" key="GridCell.Tab.0.right" timestamp="1650456222738">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
+    <state width="1225" height="460" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456222738" />
     <state width="1014" height="316" key="GridCell.Tab.0.right/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.1.bottom" timestamp="1650354063345">
+    <state width="1225" height="460" key="GridCell.Tab.1.bottom" timestamp="1650456222738">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
+    <state width="1225" height="460" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456222738" />
     <state width="1014" height="316" key="GridCell.Tab.1.bottom/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.1.center" timestamp="1650354063345">
+    <state width="1225" height="460" key="GridCell.Tab.1.center" timestamp="1650456222738">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
+    <state width="1225" height="460" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456222738" />
     <state width="1014" height="316" key="GridCell.Tab.1.center/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.1.left" timestamp="1650354063345">
+    <state width="1225" height="460" key="GridCell.Tab.1.left" timestamp="1650456222738">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
+    <state width="1225" height="460" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456222738" />
     <state width="1014" height="316" key="GridCell.Tab.1.left/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
-    <state width="1370" height="335" key="GridCell.Tab.1.right" timestamp="1650354063345">
+    <state width="1225" height="460" key="GridCell.Tab.1.right" timestamp="1650456222738">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state width="1370" height="335" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650354063345" />
+    <state width="1225" height="460" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456222738" />
     <state width="1014" height="316" key="GridCell.Tab.1.right/0.0.1920.1046/1920.0.1440.870@1920.0.1440.870" timestamp="1650185315562" />
     <state width="1146" height="347" key="GridCell.Tab.2.bottom" timestamp="1649656856223">
       <screen x="0" y="0" width="1920" height="1046" />
@@ -700,6 +727,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state width="1146" height="347" key="GridCell.Tab.2.right/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649656856223" />
+    <state x="600" y="226" key="NewModule_or_Project.wizard" timestamp="1650456015798">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="600" y="226" key="NewModule_or_Project.wizard/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456015798" />
     <state x="531" y="179" width="858" height="529" key="Registry" timestamp="1649312850073">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
@@ -708,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="508" y="224" key="RollbackChangesDialog/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649578882745" />
-    <state x="440" y="97" key="SettingsEditor" timestamp="1649757848228">
+    <state x="440" y="97" key="SettingsEditor" timestamp="1650456150952">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="440" y="97" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1649757848228" />
+    <state x="440" y="97" key="SettingsEditor/0.0.1920.1046/1920.0.1440.870@0.0.1920.1046" timestamp="1650456150952" />
     <state x="806" y="436" key="VCS.ChangelistChooser" timestamp="1649757688936">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
